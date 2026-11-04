@@ -1,6 +1,6 @@
 # Data
 
-This folder holds the FileFragment500 data set, which is published separately (DOI to be added). Install it from the
+This folder holds the FileFragment500 data set, which is published separately ((https://doi.org/10.5281/zenodo.23936675)). Install it from the
 repository root with
 
 ```
