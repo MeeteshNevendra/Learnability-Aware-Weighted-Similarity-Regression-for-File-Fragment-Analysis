@@ -1,0 +1,76 @@
+### Retrieval and adjacency by recorded extension group (test pool)
+
+| Method                              | Extension group   |   Retrieval queries |   Retrieval Hit@1 |   Retrieval Hit@10 |   Adjacency queries |   Adjacent Hit@1 within file (oracle) |   Adjacent Hit@1 pooled |
+|:------------------------------------|:------------------|--------------------:|------------------:|-------------------:|--------------------:|--------------------------------------:|------------------------:|
+| Histogram cosine                    | CSV               |                 366 |             0.997 |              1     |                 283 |                                 0.088 |                   0.088 |
+| Histogram cosine                    | DOCX              |                 503 |             0.157 |              0.416 |                 261 |                                 0.088 |                   0.008 |
+| Histogram cosine                    | HEIC              |                 640 |             0.039 |              0.341 |                   0 |                                       |                         |
+| Histogram cosine                    | JPEG              |                 512 |             0.268 |              0.619 |                 191 |                                 0.079 |                   0.01  |
+| Histogram cosine                    | JPG               |                 633 |             0.283 |              0.72  |                 149 |                                 0.034 |                   0.02  |
+| Histogram cosine                    | MP4               |                 640 |             0.133 |              0.613 |                   0 |                                       |                         |
+| Histogram cosine                    | PDF               |                 640 |             0.258 |              0.472 |                   0 |                                       |                         |
+| Histogram cosine                    | PNG               |                 381 |             0.168 |              0.444 |                 237 |                                 0.122 |                   0.034 |
+| Histogram cosine                    | PPTX              |                 560 |             0.116 |              0.33  |                   0 |                                       |                         |
+| Histogram cosine                    | WEBM              |                 560 |             0.054 |              0.293 |                   0 |                                       |                         |
+| Mean of four byte measures          | CSV               |                 366 |             0.997 |              0.997 |                 283 |                                 0.102 |                   0.102 |
+| Mean of four byte measures          | DOCX              |                 503 |             0.179 |              0.433 |                 261 |                                 0.08  |                   0.015 |
+| Mean of four byte measures          | HEIC              |                 640 |             0.036 |              0.287 |                   0 |                                       |                         |
+| Mean of four byte measures          | JPEG              |                 512 |             0.238 |              0.625 |                 191 |                                 0.105 |                   0.021 |
+| Mean of four byte measures          | JPG               |                 633 |             0.226 |              0.712 |                 149 |                                 0.04  |                   0.027 |
+| Mean of four byte measures          | MP4               |                 640 |             0.133 |              0.558 |                   0 |                                       |                         |
+| Mean of four byte measures          | PDF               |                 640 |             0.255 |              0.45  |                   0 |                                       |                         |
+| Mean of four byte measures          | PNG               |                 381 |             0.176 |              0.451 |                 237 |                                 0.105 |                   0.03  |
+| Mean of four byte measures          | PPTX              |                 560 |             0.114 |              0.362 |                   0 |                                       |                         |
+| Mean of four byte measures          | WEBM              |                 560 |             0.048 |              0.252 |                   0 |                                       |                         |
+| Bigram cosine                       | CSV               |                 366 |             1     |              1     |                 283 |                                 0.124 |                   0.124 |
+| Bigram cosine                       | DOCX              |                 503 |             0.127 |              0.364 |                 261 |                                 0.057 |                   0.011 |
+| Bigram cosine                       | HEIC              |                 640 |             0.037 |              0.211 |                   0 |                                       |                         |
+| Bigram cosine                       | JPEG              |                 512 |             0.037 |              0.262 |                 191 |                                 0.079 |                   0.005 |
+| Bigram cosine                       | JPG               |                 633 |             0.058 |              0.302 |                 149 |                                 0.034 |                   0.007 |
+| Bigram cosine                       | MP4               |                 640 |             0.037 |              0.198 |                   0 |                                       |                         |
+| Bigram cosine                       | PDF               |                 640 |             0.194 |              0.364 |                   0 |                                       |                         |
+| Bigram cosine                       | PNG               |                 381 |             0.1   |              0.26  |                 237 |                                 0.093 |                   0.017 |
+| Bigram cosine                       | PPTX              |                 560 |             0.077 |              0.227 |                   0 |                                       |                         |
+| Bigram cosine                       | WEBM              |                 560 |             0.023 |              0.18  |                   0 |                                       |                         |
+| Model, heuristic (seed 42)          | CSV               |                 366 |             0.844 |              0.981 |                 283 |                                 0.071 |                   0.057 |
+| Model, heuristic (seed 42)          | DOCX              |                 503 |             0.083 |              0.362 |                 261 |                                 0.08  |                   0.004 |
+| Model, heuristic (seed 42)          | HEIC              |                 640 |             0.037 |              0.189 |                   0 |                                       |                         |
+| Model, heuristic (seed 42)          | JPEG              |                 512 |             0.084 |              0.385 |                 191 |                                 0.084 |                   0.005 |
+| Model, heuristic (seed 42)          | JPG               |                 633 |             0.101 |              0.341 |                 149 |                                 0.04  |                   0     |
+| Model, heuristic (seed 42)          | MP4               |                 640 |             0.073 |              0.433 |                   0 |                                       |                         |
+| Model, heuristic (seed 42)          | PDF               |                 640 |             0.169 |              0.333 |                   0 |                                       |                         |
+| Model, heuristic (seed 42)          | PNG               |                 381 |             0.076 |              0.307 |                 237 |                                 0.127 |                   0.025 |
+| Model, heuristic (seed 42)          | PPTX              |                 560 |             0.068 |              0.284 |                   0 |                                       |                         |
+| Model, heuristic (seed 42)          | WEBM              |                 560 |             0.03  |              0.225 |                   0 |                                       |                         |
+| Model, uniform (seed 42)            | CSV               |                 366 |             0.803 |              0.97  |                 283 |                                 0.046 |                   0.025 |
+| Model, uniform (seed 42)            | DOCX              |                 503 |             0.072 |              0.364 |                 261 |                                 0.057 |                   0.008 |
+| Model, uniform (seed 42)            | HEIC              |                 640 |             0.017 |              0.214 |                   0 |                                       |                         |
+| Model, uniform (seed 42)            | JPEG              |                 512 |             0.061 |              0.355 |                 191 |                                 0.089 |                   0.01  |
+| Model, uniform (seed 42)            | JPG               |                 633 |             0.076 |              0.349 |                 149 |                                 0.034 |                   0     |
+| Model, uniform (seed 42)            | MP4               |                 640 |             0.084 |              0.434 |                   0 |                                       |                         |
+| Model, uniform (seed 42)            | PDF               |                 640 |             0.127 |              0.336 |                   0 |                                       |                         |
+| Model, uniform (seed 42)            | PNG               |                 381 |             0.063 |              0.289 |                 237 |                                 0.11  |                   0.021 |
+| Model, uniform (seed 42)            | PPTX              |                 560 |             0.059 |              0.279 |                   0 |                                       |                         |
+| Model, uniform (seed 42)            | WEBM              |                 560 |             0.027 |              0.221 |                   0 |                                       |                         |
+| Model, learnability-aware (seed 42) | CSV               |                 366 |             0.926 |              0.984 |                 283 |                                 0.053 |                   0.039 |
+| Model, learnability-aware (seed 42) | DOCX              |                 503 |             0.072 |              0.328 |                 261 |                                 0.08  |                   0.004 |
+| Model, learnability-aware (seed 42) | HEIC              |                 640 |             0.02  |              0.208 |                   0 |                                       |                         |
+| Model, learnability-aware (seed 42) | JPEG              |                 512 |             0.07  |              0.355 |                 191 |                                 0.084 |                   0     |
+| Model, learnability-aware (seed 42) | JPG               |                 633 |             0.081 |              0.351 |                 149 |                                 0.04  |                   0     |
+| Model, learnability-aware (seed 42) | MP4               |                 640 |             0.069 |              0.377 |                   0 |                                       |                         |
+| Model, learnability-aware (seed 42) | PDF               |                 640 |             0.138 |              0.339 |                   0 |                                       |                         |
+| Model, learnability-aware (seed 42) | PNG               |                 381 |             0.045 |              0.197 |                 237 |                                 0.131 |                   0.017 |
+| Model, learnability-aware (seed 42) | PPTX              |                 560 |             0.054 |              0.236 |                   0 |                                       |                         |
+| Model, learnability-aware (seed 42) | WEBM              |                 560 |             0.023 |              0.218 |                   0 |                                       |                         |
+| Random scores                       | CSV               |                 366 |             0.008 |              0.134 |                 283 |                                 0.035 |                   0     |
+| Random scores                       | DOCX              |                 503 |             0.008 |              0.137 |                 261 |                                 0.027 |                   0     |
+| Random scores                       | HEIC              |                 640 |             0.013 |              0.133 |                   0 |                                       |                         |
+| Random scores                       | JPEG              |                 512 |             0.01  |              0.156 |                 191 |                                 0.026 |                   0     |
+| Random scores                       | JPG               |                 633 |             0.025 |              0.169 |                 149 |                                 0.04  |                   0     |
+| Random scores                       | MP4               |                 640 |             0.013 |              0.153 |                   0 |                                       |                         |
+| Random scores                       | PDF               |                 640 |             0.023 |              0.15  |                   0 |                                       |                         |
+| Random scores                       | PNG               |                 381 |             0.008 |              0.076 |                 237 |                                 0.038 |                   0     |
+| Random scores                       | PPTX              |                 560 |             0.009 |              0.1   |                   0 |                                       |                         |
+| Random scores                       | WEBM              |                 560 |             0.018 |              0.143 |                   0 |                                       |                         |
+
+Sources: results/local/per_query/test__*.csv

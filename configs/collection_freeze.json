@@ -1,0 +1,24 @@
+{
+ "frozen_utc": "2026-10-27T10:47:55+00:00",
+ "statement": "Collection and partition frozen before any model training or test evaluation.",
+ "n_files": 500,
+ "partition_counts": {
+  "train": 350,
+  "test": 75,
+  "val": 75
+ },
+ "families": 493,
+ "multi_member_families": 5,
+ "family_rules_note": "record 17640511 device folders ['data/iphone13promax', 'data/iphone17pro']; scene correspondence not encoded in file names; 0 cross-device pairs with dHash<=10 grouped; cross-device dHash distance min=12 median=32.0",
+ "video_files_with_frame_hashes": 100,
+ "accepted_files_sha256_digest": "4973f5fd6008f71c78ebdf2814d87a73224f75b891349c65b1fa52a9338a9336",
+ "manifests": {
+  "source_manifest.csv": "e11b936d428b86c7c8a5f88d1690a1d134be0bf2791720efa648872f53fe5187",
+  "split_manifest.csv": "5522815e656b63c12ac240506ae21f3110591a7bdf71ce8c4216b4d5ee66a416",
+  "exclusion_log.csv": "d667de1209613521c3244aa965397b54394be2f38a16acb4cbfe57a30259fb59",
+  "families.csv": "d8186ca3b0715003a4b1556d881dd5260fc00cbea4b58ad05f661f41439bf8a1",
+  "candidates_commons.csv": "287897abd3b91259b20766283ef96e5bfd2e7082f95d3268d5ff6490c44b5ed2",
+  "candidates_zenodo_heic.csv": "c98d7894a42c701ddc0e21c3537315eb697b6fc7d4563eda54d131de2162d565",
+  "archive_retrieval_log.csv": "970bf2e1e48002df0a61755fa147a5d3011eb2d6d3d5fa7619356e09d99d49c8"
+ }
+}

@@ -1,0 +1,6 @@
+Method,R2 on test pairs with HEIC,R2 on test pairs without HEIC,"Same-type AUC, pairs with HEIC",Same-file AUC among HEIC fragments
+"Model, heuristic without HEIC (seed 42)",0.575,0.663,0.657,0.499
+"Model, heuristic (seed 42)",0.594,0.671,0.674,0.497
+"Model, heuristic (seed 43)",0.569,0.647,0.691,0.500
+"Model, heuristic (seed 44)",0.606,0.672,0.689,0.499
+Histogram cosine,,,0.690,0.500

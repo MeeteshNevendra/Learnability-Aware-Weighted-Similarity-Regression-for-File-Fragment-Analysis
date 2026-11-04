@@ -1,0 +1,11 @@
+### Additional robustness analysis: all schemes with seeds 42, 43, 44
+
+| Weighting scheme (robustness analysis)   |   Runs | rmse          | mae           | r2            | pearson       | spearman      |
+|:-----------------------------------------|-------:|:--------------|:--------------|:--------------|:--------------|:--------------|
+| Heuristic                                |      3 | 0.092 ± 0.002 | 0.074 ± 0.002 | 0.655 ± 0.015 | 0.828 ± 0.002 | 0.623 ± 0.002 |
+| Uniform                                  |      3 | 0.127 ± 0.003 | 0.103 ± 0.001 | 0.477 ± 0.025 | 0.724 ± 0.012 | 0.546 ± 0.024 |
+| Learnability-aware                       |      3 | 0.034 ± 0.001 | 0.022 ± 0.001 | 0.952 ± 0.002 | 0.979 ± 0.001 | 0.737 ± 0.013 |
+
+Not part of the manuscript's original comparison (uniform and learnability-aware were single runs there).
+
+Sources: results/local/regression/<run>.json

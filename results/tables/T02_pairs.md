@@ -1,0 +1,9 @@
+### Sampled pairs (four modes, 25% each)
+
+| Split   |   Pairs |   Fragments in split |   Distinct fragments in pairs |   Random-mode pairs that are same-file |   Random-mode same-extension pairs |   Repeated unordered pairs |   Self-pairs |   Adjacent pairs |   mean s_hist |   mean s_ent |   mean s_ngram |   mean s_comp |   mean s_pos |   mean s_type |
+|:--------|--------:|---------------------:|------------------------------:|---------------------------------------:|-----------------------------------:|---------------------------:|-------------:|-----------------:|--------------:|-------------:|---------------:|--------------:|-------------:|--------------:|
+| train   |  300000 |                25016 |                         25016 |                                    203 |                               7490 |                       7331 |            0 |             2335 |         0.56  |        0.915 |          0.444 |         0.885 |        0.165 |         0.526 |
+| val     |   80000 |                 5216 |                          5216 |                                    296 |                               1796 |                       3474 |            0 |              937 |         0.576 |        0.928 |          0.456 |         0.899 |        0.168 |         0.526 |
+| test    |   80000 |                 5435 |                          5435 |                                    253 |                               1812 |                       2192 |            0 |              400 |         0.575 |        0.929 |          0.454 |         0.905 |        0.167 |         0.526 |
+
+Sources: data/pairs/pair_summary.json

@@ -1,0 +1,54 @@
+{
+ "formula": "target = clip(sum_k w_k * s_k, 0, 1), with the components s_k of data/pairs/{split}_pairs.npz (float32 arrays, converted to float64 before weighting; the study stored the result as float32)",
+ "components": [
+  "s_hist",
+  "s_ent",
+  "s_ngram",
+  "s_comp",
+  "s_pos",
+  "s_type"
+ ],
+ "schemes": {
+  "heuristic": {
+   "description": "fixed weights of the original method",
+   "weights": {
+    "s_hist": 0.25,
+    "s_ent": 0.1,
+    "s_ngram": 0.3,
+    "s_comp": 0.1,
+    "s_pos": 0.15,
+    "s_type": 0.1
+   }
+  },
+  "uniform": {
+   "description": "equal weights for the six components",
+   "weights": {
+    "s_hist": 0.16666666666666666,
+    "s_ent": 0.16666666666666666,
+    "s_ngram": 0.16666666666666666,
+    "s_comp": 0.16666666666666666,
+    "s_pos": 0.16666666666666666,
+    "s_type": 0.16666666666666666
+   }
+  },
+  "learnability_aware": {
+   "description": "weight of each component proportional to the validation R2, clipped at zero, of a model trained to predict that component alone; components with negative R2 get zero weight",
+   "rule": "w_k = max(R2_val_k, 0) / sum_m max(R2_val_m, 0); validation data only",
+   "validation_r2_single_component_models": {
+    "s_hist": 0.9150613560578827,
+    "s_ent": 0.969196058637722,
+    "s_ngram": 0.849315399519102,
+    "s_comp": 0.9116439033779424,
+    "s_pos": -0.12115464478079074,
+    "s_type": -0.46041525617936396
+   },
+   "weights": {
+    "s_hist": 0.2510307142073577,
+    "s_ent": 0.26588160148617784,
+    "s_ngram": 0.2329944871096722,
+    "s_comp": 0.25009319719679235
+   }
+  }
+ },
+ "source": "training configurations of the study; identical for training seeds 42, 43 and 44"
+}
