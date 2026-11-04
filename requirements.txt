@@ -1,0 +1,15 @@
+# Direct dependencies, pinned to the versions used in the study (CPython 3.14.5, Windows 11).
+# Install PyTorch first for your CUDA version (the study used torch 2.12.1+cu130); see README.md.
+# The full package list of the original run is environment/requirements-lock.txt.
+torch==2.12.1
+numpy==2.5.2
+pandas==3.0.3
+scipy==1.18.0
+scikit-learn==1.9.1
+matplotlib==3.11.0
+requests==2.34.2
+cryptography==50.0.2
+pillow==12.3.0
+pillow-heif==1.8.1
+pypdf==6.14.2
+av==19.0.2
