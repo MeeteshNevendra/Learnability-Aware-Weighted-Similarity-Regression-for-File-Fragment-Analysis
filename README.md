@@ -1,7 +1,6 @@
 # Fragment similarity regression
 
-Code for a study of learned similarity scores for file fragments (manuscript under review; the reference will be added
-when the article is published). A Siamese network is trained to predict a weighted similarity score for pairs of
+Code for a study of learned similarity scores for file fragments. A Siamese network is trained to predict a weighted similarity score for pairs of
 512-byte file fragments, with three ways of weighting the score's six components: heuristic, uniform and
 learnability-aware. The study then tests whether the learned scores help with forensic provenance tasks (same-file
 retrieval, ranking of adjacent blocks, clustering, chaining of consecutive blocks, and an external Govdocs1 test set)
@@ -9,7 +8,7 @@ compared with direct byte-statistic baselines.
 
 This repository holds the complete pipeline as it was run: construction of the 500-file data set, fragments and pairs,
 training, the frozen evaluation protocol, evaluation, bootstrap confidence intervals, tables and figures. The data set,
-**FileFragment500 v1.0**, is published separately (DOI to be added): 500 files, 50 in each of ten recorded-extension
+**FileFragment500 v1.0**, is published separately ((https://doi.org/10.5281/zenodo.23936675)): 500 files, 50 in each of ten recorded-extension
 groups (PNG, JPG, HEIC, PDF, MP4, DOCX, PPTX, JPEG, WEBM and CSV), split 350/75/75 into training, validation and test
 files.
 
