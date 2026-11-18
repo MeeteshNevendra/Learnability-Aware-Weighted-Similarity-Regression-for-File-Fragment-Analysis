@@ -1,6 +1,6 @@
 # Learnability-Aware Weighted Similarity Regression (LAWSR)
 
-Code for the manuscript *Learnability-Aware Weighted Similarity Regression for File Fragment Analysis*.
+Learnability-Aware Weighted Similarity Regression for File Fragment Analysis.
 
 LAWSR scores a pair of file fragments with a graded provenance score. The score is 0 for blocks from different files. For blocks from the same file it rises as their relative offset separation falls.
 - **Inputs:** four byte-level similarities: histogram cosine, entropy similarity, byte 2-gram Jaccard and zlib-based compression similarity.
